@@ -1,0 +1,158 @@
+html{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 18px;
+    font-family:'Overpass';
+}
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.main *{
+    margin: 10px;
+}
+.main{
+    background-color: #1f2630;
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.message img{
+    background-color: #262f38;
+    border-radius: 45%;
+    padding: 15px;
+}
+
+h2{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+p{
+    font-size: 1rem;
+    color: hsl(217, 12%, 63%);
+    line-height: 30px;
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+
+
+
+/* Styling buttons */
+label{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border-radius: 1000px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #919191;
+}
+
+/* end of buttons styling */
+
+
+.numbers{
+    display: inline-flex;
+}
+
+.numbers *{
+    background-color: #262f38;
+    width: 50px;
+    height: 50px;
+    border-radius: 250px;
+    color:white;
+
+}
+
+.numbers *:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor:pointer;
+}
+
+[type="submit"]{
+    border-radius: 20px;
+    height: 40px ;
+    border: 0;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+[type="submit"]:hover{
+    color:hsl(25, 97%, 53%);
+    background-color: white;
+    cursor: pointer;
+}
+
+
+footer{
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+}
+
+/* Thank you card styling */
+
+.thanks{
+    display:none;
+}
+
+#selected{
+    background-color: #262f38;
+    border-radius: 20px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    color: rgb(255, 123, 0);
+}
+#thanks-message{
+    text-align: center;
+}
+
+/*media queries */
+@media screen and (max-width: 470px){
+    html{
+        font-size: 16px;
+
+    }
+    .main{
+        background-color: #1f2630;
+        width: 300px;
+        min-height: 300px;
+    }
+    .numbers *{
+        background-color: #262f38;
+        width: 35px;
+        height: 35px;
+    }
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400&display=swap" rel="stylesheet">
+    <!--CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+</head>
+
+<body>
+    <div class="main rate">
+
+        <div class="message">
+            <img src="./images/icon-star.svg">
+            <h2>How did we do?</h2>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us
+                improve our offering!</p>
+        </div>
+        <form class="buttons">
+            <div class="numbers">
+                <input type="radio" id="one" name="rating" value="1">
+                <label for="one">1</label>
+                <input type="radio" id="two" name="rating" value="2">
+                <label for="two">2</label>
+                <input type="radio" id="three" name="rating" value="3">
+                <label for="three">3</label>
+                <input type="radio" id="four" name="rating" value="4">
+                <label for="four">4</label>
+                <input type="radio" id="five" name="rating" value="5">
+                <label for="five">5</label>
+            </div>
+            <input type="submit" id="submit" value="SUBMIT">
+        </form>
+        </section>
+    </div>
+    <div class="main thanks"> 
+        <img src="./images/illustration-thank-you.svg" id="thanks">
+        <p id="selected">You selected ${selected} out of 5.</p>
+        <h2>Thank You!</h2>
+        <p id="thanks-message">We appreciate you taking the time to give a rating.<br>If you ever need more support
+            , don't hesistate to get in touch!
+        </p>
+    </div>
+
+</body>
+<footer>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Aymenfisher">Aymen Boudabia</a>.
+    </div>
+</footer>
+<script src="./main.js" defer></script>
+
+</html>
